@@ -49,9 +49,6 @@ def write_word(word:str, title:str, url:str):
         ull_osr.seek(new_addr)
         ull_osr.write(UrlLinkedListNode(url,title,0,0).to_dict(), UrlLinkedListNode.dict_types())
 
-        
-        
-
 def main():
     with open(list_file, 'wb') as f:
         pass
